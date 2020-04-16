@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scripts/KinematicBody2D.gd" type="Script" id=1]
-[ext_resource path="res://sprites/concept character.png" type="Texture" id=2]
+[ext_resource path="res://assets/CharacterSprites/concept character.png" type="Texture" id=2]
 [ext_resource path="res://scripts/RayCast2D.gd" type="Script" id=3]
 
 [sub_resource type="CircleShape2D" id=1]

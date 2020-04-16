@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/zombie-enemy.png-da8f5074052bb96aeed380b40eb761bb.stex"
+path="res://.import/TileSetChill.png-0ac8e944777c203660ae5343317d5e32.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/zombie-enemy.png"
-dest_files=[ "res://.import/zombie-enemy.png-da8f5074052bb96aeed380b40eb761bb.stex" ]
+source_file="res://assets/TileSets/TileSetChill.png"
+dest_files=[ "res://.import/TileSetChill.png-0ac8e944777c203660ae5343317d5e32.stex" ]
 
 [params]
 
