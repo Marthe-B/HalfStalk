@@ -14,6 +14,8 @@ onready var raycast = $RayCast2D
 
 var player = null
 
+var maxDistance = 100
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	add_to_group("zombies")
@@ -29,9 +31,14 @@ func _physics_process(delta):
 	var vec_to_player = player.global_position - global_position
 	vec_to_player = vec_to_player.normalized()
 	raycast.global_rotation = atan2(vec_to_player.y, vec_to_player.x)
-	#global_rotation = atan2(vec_to_player.y, vec_to_player.x)
-	# rotation bit i asume we dont need
 	move_and_collide(vec_to_player * MOVE_SPEED * delta)
+	
+	var facing = raycast.global_rotation
+	
+	if facing > 0:
+		$Sprite.flip_h = false
+	if facing < 0:
+		$Sprite.flip_h = true
 	
 	if raycast.is_colliding():
 		var coll = raycast.get_collider()
