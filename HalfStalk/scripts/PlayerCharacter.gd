@@ -3,8 +3,11 @@ extends KinematicBody2D
 export (int) var speed = 2
 
 var velocity = Vector2()
+onready var raycast = $RayCast2D
 
-#onready var raycast = $RayCast2D
+func _ready():
+	yield(get_tree(), "idle_frame")
+	get_tree().call_group("zombies", "set_player", self)
 
 func cartesian_to_isometric(cartesian):
 	var screen_pos = Vector2()
@@ -30,7 +33,7 @@ func get_input():
 	velocity = velocity.normalized() * speed
 	velocity = cartesian_to_isometric(velocity)
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	get_input()
 	velocity = move_and_collide(velocity)
 	
@@ -41,6 +44,17 @@ func _physics_process(delta):
 			$Sprite.flip_h = false
 		if look_vec.x < 0:
 			$Sprite.flip_h = true
+			
+	#Function to shoot, to be replaced later
+	if Input.is_action_just_pressed("left_click"):
+		var coll = raycast.get_collider()
+		if raycast.is_colliding() and coll.has_method("kill"):
+			coll.kill()
+
+# function to kill player and reload scene
+# too be replaced later
+func kill():
+	get_tree().reload_current_scene()
 	
 	# This is for flipping the character based on mouse pos
 	#if look_vec.x > 0:
