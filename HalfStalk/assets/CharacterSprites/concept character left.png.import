@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/concept character.png-19ef6d40f449c0630d05e94e5fc805a0.stex"
+path="res://.import/concept character left.png-8b94e37b0bc356715e9b4949654d6b4b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/concept character.png"
-dest_files=[ "res://.import/concept character.png-19ef6d40f449c0630d05e94e5fc805a0.stex" ]
+source_file="res://assets/CharacterSprites/concept character left.png"
+dest_files=[ "res://.import/concept character left.png-8b94e37b0bc356715e9b4949654d6b4b.stex" ]
 
 [params]
 

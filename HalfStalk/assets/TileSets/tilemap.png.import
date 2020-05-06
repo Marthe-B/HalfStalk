@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/concept character left.png-e1d033b3622bc9fa0d71889dd0df80cc.stex"
+path="res://.import/tilemap.png-cb34355437dd20d8bc68ae39a70fe29a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/concept character left.png"
-dest_files=[ "res://.import/concept character left.png-e1d033b3622bc9fa0d71889dd0df80cc.stex" ]
+source_file="res://assets/TileSets/tilemap.png"
+dest_files=[ "res://.import/tilemap.png-cb34355437dd20d8bc68ae39a70fe29a.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

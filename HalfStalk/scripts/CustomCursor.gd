@@ -1,6 +1,6 @@
 extends Node2D
 
-var cross = load ("res://sprites/customMouse.png")
+var cross = load ("res://assets/UIElements/customMouse.png")
 var hotspot = Vector2(8,8)
 
 func _ready():

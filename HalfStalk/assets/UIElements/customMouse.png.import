@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tilesetTest.png-95cc9d53c4e9c39dcc232ce2af883247.stex"
+path="res://.import/customMouse.png-b2d5aa2176bb96af21a11196be5c7707.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/tilesetTest.png"
-dest_files=[ "res://.import/tilesetTest.png-95cc9d53c4e9c39dcc232ce2af883247.stex" ]
+source_file="res://assets/UIElements/customMouse.png"
+dest_files=[ "res://.import/customMouse.png-b2d5aa2176bb96af21a11196be5c7707.stex" ]
 
 [params]
 

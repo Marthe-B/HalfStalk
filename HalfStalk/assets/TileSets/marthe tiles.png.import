@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/customMouse.png-9fc90398d2e86041912ccd9209078d14.stex"
+path="res://.import/marthe tiles.png-23b8719d20cd02c8dfd868a2f10084f9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/customMouse.png"
-dest_files=[ "res://.import/customMouse.png-9fc90398d2e86041912ccd9209078d14.stex" ]
+source_file="res://assets/TileSets/marthe tiles.png"
+dest_files=[ "res://.import/marthe tiles.png-23b8719d20cd02c8dfd868a2f10084f9.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
