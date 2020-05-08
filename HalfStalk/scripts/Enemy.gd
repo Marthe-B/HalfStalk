@@ -13,6 +13,11 @@ const MOVE_SPEED = 80
 onready var raycast = $RayCast2D
 
 var player = null
+var maxHealth = 100
+var currentHealth = 100
+
+var attack_cooldown = 500 #milliseconds
+var next_attack = 0
 
 var maxDistance = 100
 
@@ -44,10 +49,19 @@ func _physics_process(delta):
 		var coll = raycast.get_collider().get_parent()
 		if coll.name == "KinematicBody2D":
 		#if coll.name == "Area2D":
-			coll.kill()
+			var now = OS.get_ticks_msec()
+			if now >= next_attack:
+				coll.takeDamage()
+				next_attack = now + attack_cooldown
 			
+
 func killEnemy():
 	queue_free()
+	
+func takeDamage():
+	currentHealth = currentHealth - 50
+	if currentHealth <= 0:
+		killEnemy()
 
 func set_player(p):
 	player = p

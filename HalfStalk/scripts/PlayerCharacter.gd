@@ -3,6 +3,9 @@ extends KinematicBody2D
 export (int) var speed = 2
 
 var velocity = Vector2()
+var maxHealth = 100
+var currentHealth = 100
+
 onready var raycast = $RayCast2D
 
 func _ready():
@@ -53,10 +56,15 @@ func _physics_process(_delta):
 	if Input.is_action_just_pressed("left_click") and raycast.is_colliding():
 		var coll = raycast.get_collider().get_parent()
 		if raycast.is_colliding() and coll.has_method("killEnemy"):
-			coll.killEnemy()
+			coll.takeDamage()
 
 # function to kill player and reload scene
 # too be replaced later
+func takeDamage():
+	currentHealth = currentHealth - 20
+	if currentHealth <= 0:
+		kill()
+
 func kill():
 	get_tree().reload_current_scene()
 	
