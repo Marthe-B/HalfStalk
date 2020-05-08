@@ -41,11 +41,12 @@ func _physics_process(delta):
 		$Sprite.flip_h = true
 	
 	if raycast.is_colliding():
-		var coll = raycast.get_collider()
+		var coll = raycast.get_collider().get_parent()
 		if coll.name == "KinematicBody2D":
+		#if coll.name == "Area2D":
 			coll.kill()
 			
-func kill():
+func killEnemy():
 	queue_free()
 
 func set_player(p):

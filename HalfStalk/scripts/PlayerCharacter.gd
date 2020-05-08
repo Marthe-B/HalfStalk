@@ -46,10 +46,14 @@ func _physics_process(_delta):
 			$Sprite.flip_h = true
 			
 	#Function to shoot, to be replaced later
-	if Input.is_action_just_pressed("left_click"):
-		var coll = raycast.get_collider()
-		if raycast.is_colliding() and coll.has_method("kill"):
-			coll.kill()
+	#if Input.is_action_just_pressed("left_click"):
+	#	var coll = raycast.get_collider().get_parent()
+	#	if raycast.is_colliding() and coll.has_method("killEnemy"):
+	#		coll.killEnemy()
+	if Input.is_action_just_pressed("left_click") and raycast.is_colliding():
+		var coll = raycast.get_collider().get_parent()
+		if raycast.is_colliding() and coll.has_method("killEnemy"):
+			coll.killEnemy()
 
 # function to kill player and reload scene
 # too be replaced later
