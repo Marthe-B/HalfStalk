@@ -13,6 +13,7 @@ radius = 27.6484
 
 [node name="PopupPanel" type="PopupPanel"]
 light_mask = 0
+
 margin_left = 182.767
 margin_top = 126.948
 margin_right = 339.767
@@ -20,6 +21,7 @@ margin_bottom = 310.948
 theme = ExtResource( 1 )
 custom_styles/panel = SubResource( 3 )
 script = ExtResource( 3 )
+
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( -5.08221, 1.01645 )
