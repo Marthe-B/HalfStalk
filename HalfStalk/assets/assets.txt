@@ -18,3 +18,6 @@ UIElements
 - mouse cursor
 - healthbar
 - HUD
+
+particles
+- particle sprites goes here

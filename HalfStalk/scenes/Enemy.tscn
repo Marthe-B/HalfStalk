@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/CharacterSprites/zombie-enemy.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Enemy.gd" type="Script" id=2]
+[ext_resource path="res://scenes/DamageParticlesZombie.tscn" type="PackedScene" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 7.46163
@@ -32,3 +33,6 @@ collide_with_areas = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
 position = Vector2( -0.0586014, -5.03647 )
 shape = SubResource( 2 )
+
+[node name="Particles2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 0.704262, -9.42811 )

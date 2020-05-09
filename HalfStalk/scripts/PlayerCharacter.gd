@@ -62,6 +62,7 @@ func _physics_process(_delta):
 # too be replaced later
 func takeDamage():
 	currentHealth = currentHealth - 20
+	$Particles2D.restart()
 	if currentHealth <= 0:
 		kill()
 

@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scripts/PlayerCharacter.gd" type="Script" id=1]
 [ext_resource path="res://assets/CharacterSprites/concept character.png" type="Texture" id=2]
 [ext_resource path="res://scripts/PCRaycast.gd" type="Script" id=3]
+[ext_resource path="res://scenes/DamageParticles.tscn" type="PackedScene" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 8.3653
@@ -39,3 +40,6 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
 position = Vector2( 0.263519, -22.9262 )
 shape = SubResource( 2 )
+
+[node name="Particles2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1.8157, -8.96105 )

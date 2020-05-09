@@ -59,12 +59,20 @@ func killEnemy():
 	queue_free()
 	
 func takeDamage():
-	currentHealth = currentHealth - 50
+	currentHealth = currentHealth - 40
+	$Particles2D.restart()
+	#damageParticles()
 	if currentHealth <= 0:
 		killEnemy()
 
 func set_player(p):
 	player = p
+	
+func damageParticles():
+	if $Particles2D.emitting == true:
+		$Particles2D.restart()
+	else:
+		$Particles2D.emitting = true
 
 
 # ALL OF THIS old code, may be reused
