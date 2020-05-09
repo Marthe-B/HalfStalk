@@ -13,6 +13,11 @@ const MOVE_SPEED = 80
 onready var raycast = $RayCast2D
 
 var player = null
+var maxHealth = 100
+var currentHealth = 100
+
+var attack_cooldown = 500 #milliseconds
+var next_attack = 0
 
 var maxDistance = 100
 
@@ -41,15 +46,33 @@ func _physics_process(delta):
 		$Sprite.flip_h = true
 	
 	if raycast.is_colliding():
-		var coll = raycast.get_collider()
+		var coll = raycast.get_collider().get_parent()
 		if coll.name == "KinematicBody2D":
-			coll.kill()
+		#if coll.name == "Area2D":
+			var now = OS.get_ticks_msec()
+			if now >= next_attack:
+				coll.takeDamage()
+				next_attack = now + attack_cooldown
 			
-func kill():
+
+func killEnemy():
 	queue_free()
+	
+func takeDamage():
+	currentHealth = currentHealth - 40
+	$Particles2D.restart()
+	#damageParticles()
+	if currentHealth <= 0:
+		killEnemy()
 
 func set_player(p):
 	player = p
+	
+func damageParticles():
+	if $Particles2D.emitting == true:
+		$Particles2D.restart()
+	else:
+		$Particles2D.emitting = true
 
 
 # ALL OF THIS old code, may be reused
