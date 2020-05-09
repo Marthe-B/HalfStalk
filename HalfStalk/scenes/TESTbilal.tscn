@@ -178,6 +178,7 @@ position = Vector2( 295.695, 161.173 )
 position = Vector2( 216.641, 165.793 )
 
 [node name="PopupPanel" parent="." instance=ExtResource( 5 )]
+visible = true
 margin_left = 24.7524
 margin_top = 70.2971
 margin_right = 149.752

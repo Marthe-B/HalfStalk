@@ -13,10 +13,13 @@ radius = 35.1982
 
 [node name="PopupPanel" type="PopupPanel"]
 light_mask = 0
-margin_left = -73.7696
-margin_top = -86.9866
-margin_right = 83.2304
-margin_bottom = 97.0134
+
+anchor_right = 0.086
+margin_left = 182.767
+margin_top = 126.948
+margin_right = 339.767
+margin_bottom = 310.948
+
 theme = ExtResource( 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 3 )
@@ -33,7 +36,7 @@ position = Vector2( 1.43809, -6.26392 )
 shape = SubResource( 2 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_right = 157.0
+margin_right = 245.064
 margin_bottom = 184.0
 theme = ExtResource( 1 )
 custom_colors/default_color = Color( 0, 0.0156863, 1, 1 )
