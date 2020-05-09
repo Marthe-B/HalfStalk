@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Popuptheme.tres" type="Theme" id=1]
+[ext_resource path="res://assets/UIElements/paper-plain.png" type="Texture" id=2]
+[ext_resource path="res://scripts/PopupEDITED.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 768, 768 )
+
+[node name="PopupPanel" type="PopupPanel"]
+visible = true
+light_mask = 0
+margin_left = 296.946
+margin_top = 123.265
+margin_right = 453.946
+margin_bottom = 307.265
+theme = ExtResource( 1 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_right = 157.0
+margin_bottom = 184.0
+theme = ExtResource( 1 )
+custom_colors/default_color = Color( 0, 0.0156863, 1, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+text = "  
+  Hey stranger.. 
+
+  If you made it 
+  this far you might 
+  need this code:
+  3202
+      
+	Good luck!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
