@@ -144,13 +144,13 @@ position = Vector2( 216.641, 165.793 )
 z_index = 1
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 508.117, 93.1344 )
+position = Vector2( 835.08, -342.386 )
 texture = ExtResource( 2 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 161.576, -445.204 )
+position = Vector2( 840.057, -349.57 )
 shape = SubResource( 3 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
