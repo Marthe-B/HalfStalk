@@ -14,7 +14,7 @@ func _ready():
 #func _process(delta):
 #	pass
 #func _on_button_pressed():
-      #get_node("PopupPanel").popup()
+	  #get_node("PopupPanel").popup()
 
 func _on_Area2D_body_entered(body):
 	popup() # Replace with function body.

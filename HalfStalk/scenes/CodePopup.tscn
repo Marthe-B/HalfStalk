@@ -14,10 +14,10 @@ margin_bottom = 346.0
 script = ExtResource( 1 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 42.4379
-margin_top = 44.1846
-margin_right = 83.4379
-margin_bottom = 60.1846
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 118.0
+margin_bottom = 130.0
 text = "3232"
 
 [node name="Area2D" type="Area2D" parent="."]
