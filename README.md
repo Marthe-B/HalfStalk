@@ -1,5 +1,7 @@
 # HalfStalk readme
 
+This readme is a brief overview of our project. For more information about contribution guidelines, current state of the project, and further development, please see our wiki.
+
 ## Who are we?
 We are three students taking a course in Open Source. As a part of this course we are tasked to develop an Open Source project. We have decided to try our hands on a simple 2D isometric video game.
 
@@ -35,3 +37,5 @@ Although testing is our main concern, you are free to try your hands at any issu
 #### Suggestions and general feedback
 Lastly, any suggestions you may have are more than welcome. We are inexperienced game developers, and any input or feedback will be greatly appreciated.  
 
+## License
+This project is licensed under the MIT license. 
