@@ -15,8 +15,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Test Character Movement"
-run/main_scene="res://scenes/TileMap.tscn"
+config/name="HalfStalk"
+run/main_scene="res://scenes/TileMap copy.tscn"
 config/icon="res://icon.png"
 
 [input]

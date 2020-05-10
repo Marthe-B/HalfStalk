@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Popuptheme.tres" type="Theme" id=1]
+[ext_resource path="res://assets/UIElements/paper-plain.png" type="Texture" id=2]
+[ext_resource path="res://scripts/CodePopup.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 768, 768 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 35.1982
+
+[node name="PopupPanel" type="PopupPanel"]
+light_mask = 0
+
+anchor_right = 0.086
+margin_left = 182.767
+margin_top = 126.948
+margin_right = 339.767
+margin_bottom = 310.948
+
+theme = ExtResource( 1 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 8.84589, 169.701 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+light_mask = 0
+position = Vector2( 1.43809, -6.26392 )
+shape = SubResource( 2 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_right = 245.064
+margin_bottom = 184.0
+theme = ExtResource( 1 )
+custom_colors/default_color = Color( 0, 0.0156863, 1, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+text = "  
+  Hey stranger.. 
+
+  If you made it 
+  this far you might 
+  need this code:
+  3202
+      
+	Good luck!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
